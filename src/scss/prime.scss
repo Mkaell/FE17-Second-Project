@@ -1,0 +1,44 @@
+.prime {
+    position: relative;
+    height: 100vh;
+    background: url('../img/prime/bg.jpg');
+
+    &__wrapper {
+        margin: 120px auto;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(37, 43, 73, 0.8);
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__description {
+        max-width: 1000px;
+        margin: 25px auto;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
+
+.prime .container {
+    position: relative;
+    z-index: 2;
+}
