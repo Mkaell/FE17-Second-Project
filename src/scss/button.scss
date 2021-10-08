@@ -1,0 +1,24 @@
+.button {
+    display: block;
+    margin: 65px auto 0;
+    padding: 24px 0;
+    width: 370px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: $red-normal;
+
+    &:hover {
+        background: $red-hover;
+    }
+
+    &:active {
+        background: $red-normal;
+        box-shadow: $box-shadow-active;
+    }
+}
