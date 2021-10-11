@@ -25,8 +25,12 @@
 
 .prime {
   position: relative;
+  width: 100%;
   height: 100vh;
-  background: url("../img/prime/bg.jpg");
+  background-image: url("../img/prime/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .prime__wrapper {
   margin: 120px auto;
@@ -51,7 +55,7 @@
 }
 .prime__description {
   max-width: 1000px;
-  margin: 25px auto;
+  margin: 25px auto 0;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -65,8 +69,6 @@
 }
 
 .header {
-  position: sticky;
-  top: 0;
   padding: 20px 0;
   width: 100%;
   border-bottom: 1px solid #BABBC5;
@@ -159,6 +161,58 @@
 
 .hamburger {
   display: none;
+}
+
+.feautures {
+  padding: 45px 0 116px;
+}
+.feautures__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -15px;
+}
+.feautures__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  margin: 65px 10px 0;
+}
+.feautures__icon {
+  width: 100px;
+}
+.feautures__title {
+  margin-top: 50px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.feautures__description {
+  margin-top: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #6C7279;
 }
 
 * {
