@@ -1,0 +1,81 @@
+.team {
+    padding: 114px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+
+    &__card {
+        width: 260px;
+        margin: 0 15px;
+    }
+
+    &__img img {
+        width: 100%;
+    }
+
+    &__name {
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: #2D3033;
+    }
+
+    &__position {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: $red-normal;
+    }
+
+    &__description {
+        margin-top: 14px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #6C7279;
+    }
+
+    &__social {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+
+    }
+
+    &__link {
+        margin-right: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 39px;
+        height: 39px;
+        border: 1px solid #C6CBCD;
+        cursor: pointer;
+        color: #C6CBCD;
+        font-size: 18px;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: $red-normal;
+            border: 1px solid $red-normal;
+            transform: scale(1.4);
+        }
+
+        &:active {
+            color: $red-hover;
+            border: 1px solid $red-hover;
+            box-shadow: $box-shadow-active;
+            transform: scale(1.4);
+        }
+    }
+
+}

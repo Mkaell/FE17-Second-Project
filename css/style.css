@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@100;400;500;700;900&display=swap';
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
 .button {
   display: block;
   margin: 65px auto 0;
@@ -329,7 +330,7 @@
 }
 .work__base h4 {
   margin-top: 30px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
@@ -338,4 +339,94 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.team {
+  padding: 114px 0;
+}
+.team__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.team__card {
+  width: 260px;
+  margin: 0 15px;
+}
+.team__img img {
+  width: 100%;
+}
+.team__name {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #2D3033;
+}
+.team__position {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FF4343;
+}
+.team__description {
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6C7279;
+}
+.team__social {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.team__link {
+  margin-right: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #C6CBCD;
+  cursor: pointer;
+  color: #C6CBCD;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.team__link:hover {
+  color: #FF4343;
+  border: 1px solid #FF4343;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.team__link:active {
+  color: #E71414;
+  border: 1px solid #E71414;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
