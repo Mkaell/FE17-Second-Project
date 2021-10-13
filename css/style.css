@@ -226,6 +226,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1170px;
   padding: 0 15px;
@@ -506,6 +510,7 @@
   border-radius: 50%;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .download {
@@ -541,4 +546,104 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.footer {
+  background: #2C3154;
+  padding: 24px 0;
+}
+.footer__copyright {
+  margin: 0 auto;
+  width: 370px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #808080;
+}
+.footer__copyright span {
+  color: #FFFFFF;
+}
+
+.about {
+  padding: 56px 0 70px 0;
+  background: #353C65;
+}
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about__item {
+  width: 370px;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about__desription {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.about__social {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__link {
+  margin: 6px 27px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 39px;
+  height: 39px;
+  border: 1px solid #C6CBCD;
+  cursor: pointer;
+  color: #C6CBCD;
+  font-size: 18px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.about__link:last-child {
+  margin: 6px 0 0 0;
+}
+.about__link:hover {
+  color: #FF4343;
+  border: 1px solid #FF4343;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.about__link:active {
+  color: #E71414;
+  border: 1px solid #E71414;
+  -webkit-box-shadow: 4px 4px 30px #FF4343;
+          box-shadow: 4px 4px 30px #FF4343;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }

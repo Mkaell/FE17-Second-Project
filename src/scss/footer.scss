@@ -1,0 +1,19 @@
+.footer {
+    background: #2C3154;
+    padding: 24px 0;
+
+    &__copyright {
+        margin: 0 auto;
+        width: 370px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #808080;
+
+        & span {
+            color: #FFFFFF;
+        }
+    }
+}
