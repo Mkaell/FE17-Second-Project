@@ -26,6 +26,7 @@
 
 .prime {
   position: relative;
+  padding-bottom: 100px;
   width: 100%;
   height: 100vh;
   background-image: url("../img/prime/bg.jpg");
@@ -34,7 +35,7 @@
   background-size: cover;
 }
 .prime__wrapper {
-  margin: 120px auto;
+  margin: 120px auto 0;
 }
 .prime::after {
   content: "";
@@ -73,7 +74,6 @@
   padding: 20px 0;
   width: 100%;
   border-bottom: 1px solid #BABBC5;
-  z-index: 100;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -239,54 +239,16 @@ html {
 .work__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 378px 2px 378px 2px 378px 2px 378px;
-  grid-template-columns: repeat(4, 378px);
+  grid-template-columns: repeat(auto-fit, minmax(378px, 378px));
   -ms-grid-rows: 340px 2px 340px;
   grid-template-rows: repeat(2, 340px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 2px;
      -moz-column-gap: 2px;
           column-gap: 2px;
   row-gap: 2px;
-}
-
-.work__wrapper > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.work__wrapper > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.work__wrapper > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.work__wrapper > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
-.work__wrapper > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.work__wrapper > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.work__wrapper > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-.work__wrapper > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
 }
 .work__block {
   position: relative;
@@ -439,6 +401,11 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 .slider__description {
   display: -webkit-box;
@@ -448,13 +415,20 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 116px 170px 116px 129px;
   background: #5C3249;
 }
+.slider__img {
+  width: 50%;
+}
 .slider__img img {
   height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slider__text {
   font-family: "Cardo", sans-serif;

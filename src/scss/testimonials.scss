@@ -1,19 +1,30 @@
 .slider {
     &__item {
         display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
 
     &__description {
         display: flex;
         flex-direction: column;
+        width: 50%;
         justify-content: space-around;
         padding: 116px 170px 116px 129px;
         background: #5C3249;
 
     }
 
+    &__img {
+        width: 50%;
+
+    }
+
     &__img img {
         height: 100%;
+        width: 100%;
+        object-fit: cover;
+
     }
 
     &__text {
