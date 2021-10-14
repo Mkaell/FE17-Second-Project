@@ -18,7 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('header__list-active');
             document.body.classList.toggle('overflow');
             // back.classList.toggle('show');
+            
         });
+
     }
     toggleMenu(hamburger);
 
@@ -33,4 +35,28 @@ window.addEventListener('DOMContentLoaded', () => {
             pauseOnDotsHover: true,
         });
     });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // Плавный скрол
+    const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+    
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    }
+
+
 });
