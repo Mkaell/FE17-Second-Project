@@ -1,8 +1,9 @@
 .work {
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 378px);
+        grid-template-columns: repeat(auto-fit, minmax(378px, 378px));
         grid-template-rows: repeat(2, 340px);
+        justify-content: center;
         column-gap: 2px;
         row-gap: 2px;
     }
