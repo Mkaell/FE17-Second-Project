@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1170px;
     padding: 0 15px;

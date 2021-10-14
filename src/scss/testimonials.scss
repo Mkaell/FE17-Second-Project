@@ -6,6 +6,7 @@
     }
 
     &__description {
+
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -38,6 +39,7 @@
     }
 
     &__name {
+        margin-top: 15px;
         font-weight: 700;
         font-size: 13px;
         line-height: 15px;
