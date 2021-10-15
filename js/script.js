@@ -11,14 +11,18 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleMenu(item);
     });
 
-
-    function toggleMenu(element){
-        element.addEventListener('click', () => {
+    function checkDisplay() {
+        if(window.getComputedStyle(hamburger, null).getPropertyValue("display") == 'block') {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('header__list-active');
             document.body.classList.toggle('overflow');
             // back.classList.toggle('show');
-            
+        }
+    }
+    
+    function toggleMenu(element){
+        element.addEventListener('click', () => {
+            checkDisplay();
         });
 
     }
@@ -45,18 +49,37 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Плавный скрол
-    const smoothLinks = document.querySelectorAll('a[href^="#"]');
-    for (let smoothLink of smoothLinks) {
-        smoothLink.addEventListener('click', function(e) {
-            e.preventDefault();
-            const id = smoothLink.getAttribute('href');
+    // const smoothLinks = document.querySelectorAll('a[href^="#"]');
+    // for (let smoothLink of smoothLinks) {
+    //     smoothLink.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         const id = smoothLink.getAttribute('href');
     
-            document.querySelector(id).scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+    //         document.querySelector(id).scrollIntoView({
+    //             behavior: 'smooth',
+    //             block: 'start'
+    //         });
+    //     });
+    // }
+    $(document).ready(function(){
+        // Добавить плавную прокрутку до всех ссылок
+        $("a").on('click', function(event) {
+      
+          if (this.hash !== "") {
+            event.preventDefault();
+      
+            var hash = this.hash;
+      
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+      
+              window.location.hash = hash;
             });
+          } 
         });
-    }
+      });
+    
 
 
 });

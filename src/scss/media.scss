@@ -77,7 +77,8 @@
     }
 
     .prime {
-        padding-bottom: 50px;
+        padding-bottom: 80px;
+        min-height: 0;
 
         &__wrapper {
             margin-top: 80px;
@@ -245,7 +246,7 @@
 
 
     .prime {
-        padding-bottom: 50px;
+        padding-bottom: 80px;
 
         &__wrapper {
             margin-top: 80px;
@@ -488,10 +489,10 @@
 
 
     .prime {
-        padding-bottom: 50px;
+        padding-bottom: 80px;
 
         &__wrapper {
-            margin-top: 50px;
+            margin-top: 80px;
 
         }
 
@@ -595,7 +596,6 @@
         }
 
         & .slick-dots li {
-            margin-top: 10px;
 
             & button {
                 width: 9px;
