@@ -95,7 +95,7 @@
             line-height: 18px;
         }
 
-        & .button {
+        & .link {
             display: block;
             margin: 60px auto 0;
             padding: 24px 0;
@@ -190,7 +190,7 @@
             line-height: 18px;
         }
 
-        & .button {
+        & .link {
             margin: 60px auto 0;
             padding: 24px 0;
             width: 300px;
@@ -507,7 +507,7 @@
             line-height: 16px;
         }
 
-        & .button {
+        & .link {
             margin: 60px auto 0;
             padding: 15px 0;
             width: 270px;
@@ -572,7 +572,6 @@
     .slider {
 
         &__item {
-            // margin-top: -50px;
             justify-content: center;
         }
 
