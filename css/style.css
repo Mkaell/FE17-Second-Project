@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@100;400;500;700;900&display=swap';
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
-.button {
+.link {
   display: block;
   margin: 65px auto 0;
   padding: 24px 0;
@@ -15,10 +15,10 @@
   color: #FFFFFF;
   background: #FF4343;
 }
-.button:hover {
+.link:hover {
   background: #E71414;
 }
-.button:active {
+.link:active {
   background: #FF4343;
   -webkit-box-shadow: 4px 4px 30px #FF4343;
           box-shadow: 4px 4px 30px #FF4343;
@@ -728,7 +728,7 @@
     font-size: 15px;
     line-height: 18px;
   }
-  .prime .button {
+  .prime .link {
     display: block;
     margin: 60px auto 0;
     padding: 24px 0;
@@ -810,7 +810,7 @@
     font-size: 15px;
     line-height: 18px;
   }
-  .download .button {
+  .download .link {
     margin: 60px auto 0;
     padding: 24px 0;
     width: 300px;
@@ -1080,7 +1080,7 @@
     font-size: 14px;
     line-height: 16px;
   }
-  .prime .button {
+  .prime .link {
     margin: 60px auto 0;
     padding: 15px 0;
     width: 270px;
