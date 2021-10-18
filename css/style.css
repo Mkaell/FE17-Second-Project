@@ -1148,6 +1148,9 @@
     font-size: 12px;
     line-height: 14px;
   }
+  .slider .slick-dots li {
+    margin-top: -25px;
+  }
   .slider .slick-dots li button {
     width: 9px;
     height: 9px;
