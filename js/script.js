@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
             arrows: false,
             dots: true,
             speed: 1000,
-            autoplay: false,
+            autoplay: true,
             pauseOnFocus: true,
             pauseOnHover: true,
             pauseOnDotsHover: true,
@@ -48,32 +48,17 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Плавный скрол
-    // const smoothLinks = document.querySelectorAll('a[href^="#"]');
-    // for (let smoothLink of smoothLinks) {
-    //     smoothLink.addEventListener('click', function(e) {
-    //         e.preventDefault();
-    //         const id = smoothLink.getAttribute('href');
-    
-    //         document.querySelector(id).scrollIntoView({
-    //             behavior: 'smooth',
-    //             block: 'start'
-    //         });
-    //     });
-    // }
     $(document).ready(function(){
         // Добавить плавную прокрутку до всех ссылок
         $("a").on('click', function(event) {
       
           if (this.hash !== "") {
             event.preventDefault();
-      
             var hash = this.hash;
-      
+
             $('html, body').animate({
               scrollTop: $(hash).offset().top
             }, 800, function(){
-      
               window.location.hash = hash;
             });
           } 
