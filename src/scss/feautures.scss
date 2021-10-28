@@ -20,6 +20,11 @@
 
     &__icon {
         width: 100px;
+        transition: 0.5s ease;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
     }
 
     &__title {
