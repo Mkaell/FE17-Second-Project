@@ -63,8 +63,8 @@ npm start
 
 
 <div align="center">
-  <img src="./img/screens/third.png"align="center" width='49%'>
-  <img src="./img/screens/fourth.png"align="center" width='49%'>
-  <img src="./img/screens/second.png"align="center" width='49%'>
-  <img src="./img/screens/first.png" align="center" width='49%'>
+  <img src="./src/img/screens/third.png"align="center" width='49%'>
+  <img src="./src/img/screens/fourth.png"align="center" width='49%'>
+  <img src="./src/img/screens/second.png"align="center" width='49%'>
+  <img src="./src/img/screens/first.png" align="center" width='49%'>
 </div>
