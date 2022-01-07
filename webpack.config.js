@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
@@ -86,11 +87,12 @@ const plugins = () => {
             },
             favicon: "./img/favicon/favicon.ico"
         }),
-        // new webpack.ProvidePlugin({
-        //     $: "jquery",
-        //     jQuery: "jquery",
-        //     "window.jQuery": "jquery",
-        // }),
+        new CopyWebpackPlugin([
+            {
+                from: path.resolve(__dirname, 'src/img'),
+                to: path.resolve(__dirname, 'dist/img')
+            }
+        ]),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: filename('css')
